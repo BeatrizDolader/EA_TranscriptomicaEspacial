@@ -1,0 +1,26 @@
+Loading required package: GiottoClass
+Giotto Suite 4.2.1
+1. read Giotto object
+2. read Giotto feature information
+3. read Giotto spatial information
+4. read Giotto image information
+python already initialized in this session
+ active environment : 'giotto_env'
+ python version : 3.10
+Warning message:
+Some of Giotto's expected python module(s) were not found:
+pandas, community, sklearn
+(This is fine if python-based functions are not needed)
+
+** Python path used:
+"/clinicfs/userhomes/bdolader/.local/share/r-miniconda/envs/giotto_env/bin/python" 
+Warning messages:
+1: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 61.3 GiB
+2: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 61.3 GiB
+Folder already exist and overwrite = TRUE,
+ overwrite folder
+1. Start writing feature information
+2. Start writing spatial information
+3. Start writing image information
