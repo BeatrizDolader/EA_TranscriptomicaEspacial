@@ -35,7 +35,7 @@ cluster_markers = readRDS(markers_file)
 # 3. Deconvolución utilizando genes marcadores de grupo de Leiden
 # ==============================================================================
 # 3.1. Seleccionar los mejores marcadores
-top_markers <- cluster_markers[, head(.SD, 20), by = "cluster"]$feats
+top_markers <- cluster_markers[, head(.SD, 50), by = "cluster"]$feats
 
 # 3.2. Crear matriz de firmas celulares
 DWLS_matrix <- makeSignMatrixDWLSfromMatrix(
@@ -108,7 +108,7 @@ cell_markers <- Giotto::findMarkers_one_vs_all(
   logFC = 0.5,
   min_feats = 20)
 
-top <- cell_markers[, head(.SD, 20), by = "cluster"]
+top <- cell_markers[, head(.SD, 50), by = "cluster"]
 topgenes <- unique(top$feats)
 
 DWLS_cell <- makeSignMatrixDWLSfromMatrix(
